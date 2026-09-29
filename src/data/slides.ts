@@ -39,7 +39,7 @@ export const slides: Slide[] = [
           "Лицарі складали основу середньовічної важкої кінноти та користувалися юридичними привілеями як частина шляхетного «воїнського стану».",
       },
     ],
-    image: "/images/slide1-knights.jpg",
+    image: "images/slide1-knights.jpg",
     imageCaption: "Вершник-лицар — вершина середньовічної феодальної війни",
     variant: "parchment",
     timeline: [
@@ -76,7 +76,7 @@ export const slides: Slide[] = [
           "Під час церемонії посвяти сеньйор або король вдаряв зброєносця мечем по плечу й дарував йому титул лицаря.",
       },
     ],
-    image: "/images/slide2-path.jpg",
+    image: "images/slide2-path.jpg",
     imageCaption: "Акольда — мить становлення лицаря",
     variant: "royal",
     highlight: {
@@ -112,7 +112,7 @@ export const slides: Slide[] = [
           "Захист жінок, дітей, бідних та Церкви — лицар як меч християнського милосердя.",
       },
     ],
-    image: "/images/slide3-chivalry.jpg",
+    image: "images/slide3-chivalry.jpg",
     imageCaption: "Лицар як захисник беззахисних",
     variant: "parchment",
     highlight: {
@@ -148,7 +148,7 @@ export const slides: Slide[] = [
           "Вершник-лицар був вирішальною силою середньовічної війни — атакував щільними лавами з опущеними списами, ламаючи лави ворога.",
       },
     ],
-    image: "/images/slide4-armor.jpg",
+    image: "images/slide4-armor.jpg",
     imageCaption: "Еволюція зброї — від кольчуги до пластин",
     variant: "dark",
     timeline: [
@@ -185,7 +185,7 @@ export const slides: Slide[] = [
           "Леви, орли, хрести та лілії несли певне значення: силу, королівську владу, віру та родовід.",
       },
     ],
-    image: "/images/slide5-tournament.jpg",
+    image: "images/slide5-tournament.jpg",
     imageCaption: "Турнірне поле — слава й геральдика",
     variant: "gold",
     highlight: {
@@ -221,7 +221,7 @@ export const slides: Slide[] = [
           "Лицарі одружувались, виховували дітей, опікувались Церквою, полювали з соколами та грали в шахи.",
       },
     ],
-    image: "/images/slide6-castle.jpg",
+    image: "images/slide6-castle.jpg",
     imageCaption: "Велика зала — серце замкового побуту",
     variant: "royal",
     highlight: {
@@ -257,7 +257,7 @@ export const slides: Slide[] = [
           "До XVI–XVII століть лицарство збереглося лише як церемоніальна відзнака. Середньовічний лицар зник назавжди.",
       },
     ],
-    image: "/images/slide7-decline.jpg",
+    image: "images/slide7-decline.jpg",
     imageCaption: "Порох і довгий лук вирішують долю лицаря",
     variant: "dark",
     timeline: [
