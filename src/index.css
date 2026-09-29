@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cinzel", serif;
+  --font-serif: "EB Garamond", serif;
+  --font-cormorant: "Cormorant Garamond", serif;
+  --color-parchment: #f4ead5;
+  --color-parchment-dark: #d9c9a8;
+  --color-ink: #2a1f17;
+  --color-ink-soft: #4a3a2a;
+  --color-royal: #1a2a4a;
+  --color-royal-deep: #0f1a30;
+  --color-royal-light: #2c4170;
+  --color-gold: #b8893a;
+  --color-gold-bright: #d4a849;
+  --color-gold-soft: #c9a76b;
+  --color-crimson: #7a1f24;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "EB Garamond", serif;
+  background: #0a0e1a;
+  color: #f4ead5;
+  overflow: hidden;
+}
+
+/* Parchment texture background */
+.parchment-bg {
+  background-color: #f4ead5;
+  background-image:
+    radial-gradient(at 20% 30%, rgba(184, 137, 58, 0.08) 0px, transparent 50%),
+    radial-gradient(at 80% 70%, rgba(122, 31, 36, 0.05) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(74, 58, 42, 0.04) 0px, transparent 80%);
+}
+
+/* Royal dark background */
+.royal-bg {
+  background:
+    radial-gradient(ellipse at top, rgba(44, 65, 112, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom, rgba(184, 137, 58, 0.1) 0%, transparent 50%),
+    linear-gradient(180deg, #0f1a30 0%, #1a2a4a 100%);
+}
+
+/* Decorative gold border */
+.gold-border {
+  border: 2px solid;
+  border-image: linear-gradient(135deg, #b8893a, #d4a849, #b8893a) 1;
+}
+
+/* Ornate divider */
+.ornate-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.ornate-divider::before,
+.ornate-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #b8893a, transparent);
+}
+
+/* Slide transitions */
+.slide-enter {
+  animation: slideIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Initial load animation */
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Custom scrollbar for slide content */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: rgba(184, 137, 58, 0.1);
+  border-radius: 3px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #b8893a;
+  border-radius: 3px;
+}
+
+/* Decorative ornament SVG style */
+.ornament {
+  color: #b8893a;
+}
+
+/* Subtle film grain on dark slides */
+.film-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Crown flourish */
+.crown-flourish {
+  background: linear-gradient(90deg, transparent 0%, #b8893a 20%, #d4a849 50%, #b8893a 80%, transparent 100%);
+}
+
+/* Glowing button hover */
+.btn-medieval {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn-medieval::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(212, 168, 73, 0.2), rgba(184, 137, 58, 0.2));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.btn-medieval:hover::before {
+  opacity: 1;
+}
